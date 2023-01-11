@@ -24,15 +24,15 @@ function Items() {
   const { width: w, height: h } = useThree((state) => state.viewport)
   return (
     <Scroll>
-      <Item url="./1.jpeg" scale={[w / 3, w / 3, 1]} position={[-w / 6, 0, 0]} />
-      <Item url="./2.jpg" scale={[2, w / 3, 1]} position={[w / 30, -h, 0]} />
-      <Item url="./3.jpeg" scale={[w / 3, w / 5, 1]} position={[-w / 4, -h * 1, 0]} />
-      <Item url="./4.jpg" scale={[w / 5, w / 5, 1]} position={[w / 4, -h * 1.2, 0]} />
-      <Item url="./5.jpeg" scale={[w / 5, w / 5, 1]} position={[w / 10, -h * 1.75, 0]} />
-      <Item url="./6.jpg" scale={[w / 3, w / 3, 1]} position={[-w / 4, -h * 2, 0]} />
-      <Item url="./7.jpg" scale={[w / 3, w / 5, 1]} position={[-w / 4, -h * 2.6, 0]} />
-      <Item url="./8.jpg" scale={[w / 2, w / 2, 1]} position={[w / 4, -h * 3.1, 0]} />
-      <Item url="./9.jpg" scale={[w / 2.5, w / 2, 1]} position={[-w / 6, -h * 4.1, 0]} />
+      <Item url="/1.jpg" scale={[w / 3, w / 3, 1]} position={[-w / 6, 0, 0]} />
+      <Item url="/2.jpg" scale={[2, w / 3, 1]} position={[w / 30, -h, 0]} />
+      <Item url="/3.jpg" scale={[w / 3, w / 5, 1]} position={[-w / 4, -h * 1, 0]} />
+      <Item url="/4.jpg" scale={[w / 5, w / 5, 1]} position={[w / 4, -h * 1.2, 0]} />
+      <Item url="/5.jpg" scale={[w / 5, w / 5, 1]} position={[w / 10, -h * 1.75, 0]} />
+      <Item url="/6.jpg" scale={[w / 3, w / 3, 1]} position={[-w / 4, -h * 2, 0]} />
+      <Item url="/7.jpg" scale={[w / 3, w / 5, 1]} position={[-w / 4, -h * 2.6, 0]} />
+      <Item url="/8.jpg" scale={[w / 2, w / 2, 1]} position={[w / 4, -h * 3.1, 0]} />
+      <Item url="/9.jpg" scale={[w / 2.5, w / 2, 1]} position={[-w / 6, -h * 4.1, 0]} />
       {/* <video src='/img/41954.mp4'></video> */}
     </Scroll>
   )
@@ -44,7 +44,7 @@ export const App = () => (
     <ScrollControls damping={6} pages={5}>
       <Items />
       <Scroll html style={{ width: '100%' }}>
-        <h1 style={{ position: 'absolute', top: `100vh`, right: '20vw', fontSize: '25em', transform: `translate3d(0,-100%,0)` }}>love</h1>
+        <h1 style={{ position: 'absolute', top: `100vh`, right: '3vw', fontSize: '25em', transform: `translate3d(0,-103%,0)` }}>love</h1>
         <h1 style={{ position: 'absolute', top: '180vh', left: '10vw' }}>you,</h1>
         <h1 style={{ position: 'absolute', top: '260vh', right: '10vw' }}>for all</h1>
         <h1 style={{ position: 'absolute', top: '350vh', left: '10vw' }}>my</h1>
