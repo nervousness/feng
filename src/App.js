@@ -38,22 +38,27 @@ function Items() {
   )
 }
 
-export const App = () => (
-  <Canvas orthographic camera={{ zoom: 80 }} gl={{ alpha: false, antialias: false, stencil: false, depth: false }} dpr={[1, 1.5]}>
-    <color attach="background" args={['#f0f0f0']} />
-    <ScrollControls damping={6} pages={5}>
-      <Items />
-      <Scroll html style={{ width: '100%' }}>
-        <h1 style={{ position: 'absolute', top: `100vh`, right: '3vw', fontSize: '25em', transform: `translate3d(0,-103%,0)` }}>love</h1>
-        <h1 style={{ position: 'absolute', top: '180vh', left: '10vw' }}>you,</h1>
-        <h1 style={{ position: 'absolute', top: '260vh', right: '10vw' }}>for all</h1>
-        <h1 style={{ position: 'absolute', top: '350vh', left: '10vw' }}>my</h1>
-        <h1 style={{ position: 'absolute', top: '450vh', right: '10vw' }}>
-          life
-          <br />
-          .
-        </h1>
-      </Scroll>
-    </ScrollControls>
-  </Canvas>
-)
+export const App = () => {
+  return (
+    <Canvas orthographic camera={{ zoom: 80 }} gl={{ alpha: false, antialias: false, stencil: false, depth: false }} dpr={[1, 1.5]}>
+      <color attach="background" args={['#f0f0f0']} />
+      <ScrollControls damping={6} pages={5}>
+        <Items />
+        <Scroll html style={{ width: '100%' }}>
+          <h1 style={{ position: 'absolute', top: `100vh`, right: '3vw', fontSize: '25em', transform: `translate3d(0,-103%,0)` }}>love</h1>
+          <h1 style={{ position: 'absolute', top: '180vh', left: '10vw' }}>you,</h1>
+          <h1 style={{ position: 'absolute', top: '260vh', right: '10vw' }}>for all</h1>
+          <h1 style={{ position: 'absolute', top: '350vh', left: '10vw' }}>my</h1>
+          <h1 style={{ position: 'absolute', top: '450vh', right: '10vw' }}>
+            life
+            <br />.
+          </h1>
+        </Scroll>
+      </ScrollControls>
+    </Canvas>
+  )
+}
+
+// export const App = () => (
+
+// )
