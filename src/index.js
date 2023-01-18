@@ -29,11 +29,16 @@ function Loading() {
   )
 }
 
+window.onload = () => {
+  const main = document.querySelector('#loading')?.nextElementSibling
+  main.classList.add('finish')
+}
+
 createRoot(document.getElementById('root')).render(
   <>
     <Loading/>
     <Suspense fallback={null}>
-      <App />
+      <App/>
     </Suspense>
     <Overlay />
     {/* <Logo style={{ position: 'absolute', top: 40, left: 40, width: 30 }} /> */}
