@@ -45,6 +45,14 @@ svg {
   fill: black;
 }
 
+#root>div:nth-child(2) {
+  visibility: hidden;
+}
+
+.finish {
+  visibility: inherit !important;
+}
+
 .loading {
   position: absolute;
   top: 0;
